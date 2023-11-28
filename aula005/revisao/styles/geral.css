@@ -9,3 +9,22 @@ header, footer {
     background-color: var(--cinza);
     color: var(--branco);
 }
+
+main {
+    background-image: url(../images/1_5lyavS59mazOFnb55Z6znQ.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: var(--branco);
+}
+
+.alinhamentoForm {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 125px 0px;
+    background-color: #63636342;
+    backdrop-filter: blur(20px);
+}
