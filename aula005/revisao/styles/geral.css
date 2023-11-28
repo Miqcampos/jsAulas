@@ -1,0 +1,11 @@
+:root {
+    --preto : #000000;
+    --cinza : #2c2c2c;
+    --vermelho : #e70000;
+    --branco : #ffffff;
+}
+
+header, footer {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
