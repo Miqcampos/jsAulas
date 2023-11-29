@@ -26,8 +26,10 @@ function cadastrar() {
     let data = document.querySelector("#data").value;
     let diretor = document.querySelector("#diretor").value;
     let categoria = document.querySelector("#categoria").value;
+    let msgCadastro = document.querySelector("#msgCadastro")
 
     filmes.push(new Filme(nome, descricao, data, diretor, categoria));
+    msgCadastro.innerHTML = `<h5 class="sucesso">Filme cadastrado com sucesso!</h5>`;
 
 }
 
