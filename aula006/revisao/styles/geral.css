@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --preto : #000000;
+    --cinza : #2c2c2c;
+    --vermelho : #e70000;
+    --branco : #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Poppins;
+    color: var(--vermelho);
+    margin: 10px 0px;
+}
+
+header, footer {
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+main {
+    background-image: url(../images/1_5lyavS59mazOFnb55Z6znQ.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+label {
+    color: var(--branco);
+}
+
+.alinhamentoForm {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 125px 0px;
+    background-color: #0000005b;
+    backdrop-filter: blur(30px);
+}
+
+.filme {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+    border: 2px solid red;
+    border-radius: 15px;
+    background-color: #ff000042;
+    backdrop-filter: blur(15px);
+}
+
+
+
+
