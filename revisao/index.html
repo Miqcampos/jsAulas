@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/index.css">
-
     <title>Spotify</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
-
 <body>
-
     <div id="root" class="container-fluid bg-black m-0 p-0 vh-100">
-
-        <header style="height: 5%;" class="container-fluid m-0 p-0 d-flex justify-content-between p-2">
-
+        <header style="height: 5%;" class="container-fluid m-0 d-flex justify-content-between p-2">
             <!-- more -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="whitesmoke" class="bi bi-three-dots"
-                viewBox="0 0 16 16">
-                <path
-                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="whitesmoke" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
             </svg>
             <div id="ladoDireitoHeader">
                 <!-- dash -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="whitesmoke" class="bi bi-dash"
-                    viewBox="0 0 16 16">
-                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="whitesmoke" class="bi bi-dash" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
                 </svg>
-                <!-- window -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="whitesmoke"
-                    class="bi bi-window-stack" viewBox="0 0 16 16">
-                    <path
-                        d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
-                    <path
-                        d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1m1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2z" />
+                <!-- window stack -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="whitesmoke" class="bi bi-window-stack" viewBox="0 0 16 16">
+                    <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                    <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1m1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2z"/>
                 </svg>
                 <!-- cancel -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="whitesmoke" class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="whitesmoke" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                 </svg>
-                
-            </div>
-
+            </div>         
         </header>
-
-        <main class="container-fluid row p-0 m-0" style="height: 85%;">
-            <!-- menuLateral -->
-            <aside id="menuLateral" class="bg-danger col-2">teste</aside>
+        <main class="container-fluid p-0 m-0 row" style="height: 80%;">
+            <!-- menulateral -->
+            <aside id="menuLateral" class="col-2"></aside>
             <!-- conteudoPrincipal -->
-            <aside id="conteudoPrincipal" class="bg-primary col-10">teste</aside>
+            <div id="conteudoPrincipal" class="col-10">
+                <section id="recentemente" class="text-white container-fluid">
+                    <h3>Tocados recentementes</h3>
+                    <div class="musicasLista d-flex">
+                        <!-- musica1 -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gorillazModal">
+                            <div class="bg-dark text-white card p-2" style="width: 16rem;">
+                                <img src="images/Musics/gorillaz.jpg" class="rounded card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Humanz Deluxe</h5>
+                                <p class="card-text">Gorillaz</p>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </section>
+            </div>
         </main>
-
-        <footer style="height: 15%;" class="container-fluid row p-0 m-0">
-            <div id="musicaInfo"></div>
-            <div class="container col-5" id="musicaProgresso">
+        <footer class="container-fluid p-0 m-0 row" style="height: 15%;">
+            <div id="MusicaInfo"></div>
+            <!-- PROGRESSO MUSICA -->
+            <div class="container col-5" id="MusicaProgresso">
                 <div id="controlesMusica" class="d-flex justify-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="whitesmoke" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
-                    </svg>
+                    <button type="button" class="btn play" id="btnPlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="whitesmoke" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"/>
+                        </svg>
+                    </button>
                 </div>
-                <div id="progressoMusica">
+                <div id="progressoMusicaInfo">
                     <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 30%"></div>
+                        <div class="progress-bar" style="width: 0%"></div>
                     </div>
                 </div>
             </div>
-            <div id="musicaOpcoes"></div>
+            <!-- MUSICA OPCOES -->
+            <div id="MusicaOpcoes"></div>
         </footer>
-
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+    <!-- modal -->
+    <!-- modal gorillaz -->
+    <div class="modal fade" id="gorillazModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="scripts/jquery-3.7.1.js"></script>
     <script src="scripts/script.js"></script>
-
 </body>
-
 </html>
