@@ -1,0 +1,27 @@
+:root {
+    --preto: #2A2B2A;
+    --amarelo: #dba204;
+    --amareloTransparente: #dba20488;
+    --branco: #ffffff;
+}
+
+header, footer {
+    background-color: var(--preto);
+}
+
+.nav-link, footer {
+    color: var(--branco)!important;
+}
+
+#buttonHeader a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+#buttonHeader a:hover {
+    color: var(--preto);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--amarelo);
+}

@@ -1,0 +1,41 @@
+main {
+    background-image: url(../../images/imagesLogin/fundo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#alinhamentoCadastro {
+    width: 50%;
+    height: 600px;
+    margin: 170px;
+    border-radius: 10px;
+    border: 2px solid var(--preto);
+    background-color: var(--branco);
+}
+
+#alinhamentoCadastro form {
+    width: 70%;
+}
+
+form a {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+form a:hover {
+    color: var(--amarelo);
+    transition: 0.5s;
+}
+
+#botaoCadastro button {
+    width: 100px;
+    background-color: var(--preto);
+    color: var(--amarelo);
+}
+
+#botaoCadastro button:hover {
+    background-color: var(--amarelo);
+    color: var(--preto);
+    transition: 0.5;
+}
