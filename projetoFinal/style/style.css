@@ -55,6 +55,16 @@ button a:hover {
     box-shadow: 6px 6px 6px var(--preto);
 }
 
+/* quadros */
+
+#bannerQuadros {
+    height: 700px;
+    background-image: url(../images/banners/bannerQuadros.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
 /* catálogo */
 
 #bannerCatalogo {
@@ -72,10 +82,17 @@ button a:hover {
     backdrop-filter: blur(3px);
 }
 
-.card button, #form button {
+
+.card button, #form button, #btnListar {
     background-color: var(--preto);
     color: var(--amarelo);
     border: none;
+}
+
+#btnListar:hover {
+    background-color: var(--amarelo);
+    color: var(--preto);
+    transition: 0.5s;
 }
 
 .card button:hover, #form button:hover {
