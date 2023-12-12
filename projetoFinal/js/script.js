@@ -14,15 +14,24 @@ var adicionarBtns = document.querySelectorAll(".btn-success");
 
 
 adicionarBtns.forEach((pintura) => {
+
     pintura.addEventListener('click', () => {
     let pinturaId = pintura.getAttribute("id")
-    
-    let nome = pintura.getAttribute(".modal-title");
-    console.log(nome)
-    
+    function addProdutos () {
+        const quadros = document.getElementById(pinturaId)
+        for (var i = 0; i < quadros.length; i++) {
+            quadros[i].addEventListener("click", addProductToCart)
+          }
+    }
     })
-
 })
+
+
+function addProductToCart(event){
+    const button = event.target
+    console.log(button)
+}
+
 
 listarBtn.addEventListener("click", listar);
 

@@ -89,6 +89,11 @@ button a:hover {
     border: none;
 }
 
+#btnForm {
+    background-color: var(--amarelo);
+    color: var(--branco);
+}
+
 #btnListar:hover {
     background-color: var(--amarelo);
     color: var(--preto);
@@ -145,8 +150,10 @@ td:hover{
     transition: 0.5s;
 }
 
+/* formulario */
+
 #formulario {
-    height: 800px;
+    height: 700px;
     background-image: url(../images/banners/bannerForm.jpg);
     background-size: cover;
     background-position: top;
@@ -159,10 +166,13 @@ td:hover{
 }
 
 #formAlinhamento {
+    margin: 160px 0px;
+    width: 500px;
+    height: 400px;
     border-radius: 10px;
     border: 2px solid black;
-    width: 500px;
     background-color: #2a2b2aab;
+    color: var(--amarelo);
 }
 
 #form button {
