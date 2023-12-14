@@ -2,25 +2,34 @@
 // Fetch = Busca api
 
 var cep = document.querySelector("#cep");
+var resposta = document.querySelector("#resposta")
 
+resposta.innerHTML = "Digite um cep de 8 dígitos";
 cep.addEventListener("focusout", consultar);
 
 function consultar() {
 
     let cepValue = document.querySelector("#cep").value;
 
-    const Api = fetch(`https://viacep.com.br/ws/${cepValue}/json/`).then((res) => {
+    if(cepValue.length < 8 || cepValue.length > 8) {
+        
+        resposta.innerHTML = "Digite um cep válido!";
+        
+    } else {
 
-        return res.json()
+        const Api = fetch(`https://viacep.com.br/ws/${cepValue}/json/`).then((res) => {
 
-    }).then((data) => {
+            return res.json()
 
-        let localidade = document.querySelector("#localidade") ;
-        localidade.value = data.localidade
+        }).then((data) => {
 
-    })
+            let localidade = document.querySelector("#localidade") ;
+            localidade.value = data.localidade;
+            resposta.innerHTML = "";
 
-    console.log()
+        });
+
+    }
 
 }
 
